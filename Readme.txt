@@ -1,0 +1,2 @@
+Runtime Complexity of the algorithm would be n^(n^2) because of how the board(a 2D array) and the number of possible options for each slot.
+Spacetime Complexity would be n^2 considering the amount of space that the board will take up as it is a 9x9 board.
