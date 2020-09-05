@@ -1,10 +1,10 @@
 import java.util.Scanner;
 public class sudokulab
 {
-	private static int slots = 9;
-    private static int[][]board = new int[9][9];
+	public static int slots = 9;
+    public static int[][]board = new int[9][9];
 
-    private static void printBoard(){//prints out board
+    public static void printBoard(){//prints out board
         for(int row=0;row<slots;row++){
             if(row%3==0&&row!=0){
                 System.out.println("-------------------");
@@ -18,7 +18,7 @@ public class sudokulab
             System.out.println();
         }
     }
-    private static int[] checkUnassigned(int r, int c)//if numbers are 0 and keep track of it
+    public static int[] checkUnassigned(int r, int c)//if numbers are 0 and keep track of it
     {
         int cunassign = 0;
         for(int row=0;row<slots;row++)
@@ -38,7 +38,7 @@ public class sudokulab
         int[]x={cunassign, -1, -1};//will go back to check
         return x;
     }
-    private static boolean safetoplace(int n, int row, int col)
+    public static boolean safetoplace(int n, int row, int col)
     //determine whether the solver function is safe to place true or false
     {
         for(int i=0;i<slots;i++){//checks if rows 
